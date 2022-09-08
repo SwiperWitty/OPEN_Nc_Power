@@ -3,7 +3,7 @@ MCU+OPA 控制DC-DC电源
 
 
 
-引言
+### 引言
 
 MCU：单片机（本设计需要输出PWM波、通信、ADC）
 
@@ -11,7 +11,11 @@ OPA: [运放](https://baike.baidu.com/item/运放/1527937)
 
 DC-DC：[直流的电压转换器](https://baike.baidu.com/item/DC-DC?fromModule=lemma_search-box)
 
+(图片看不清可以点击放大！！)
 
+
+
+____
 
 ### DC-DC
 
@@ -27,8 +31,8 @@ DC-DC：[直流的电压转换器](https://baike.baidu.com/item/DC-DC?fromModule
 
 ​	这就是我们想要的操控FB的电路。很明显这里的阻值需要去计算合适的值，需要满足以下条件：
 
-1. 当Vx=3.3V时，Vy=18V
-2. 当Vx=0.0V时，Vy=1.2V
+1. 当Vx=3.3V时，Vy=1.2V
+2. 当Vx=0.0V时，Vy=18V     （相当于r1并r2）
 3. U = I*R
 4. I(r2) = I(r1) + I(A)
 
